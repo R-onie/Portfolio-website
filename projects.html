@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-grid">
+      <div class="project-card">
+        <h2>Portfolio Website</h2>
+        <p>A personal portfolio site built using HTML5 and CSS3 to showcase my work and skills.</p>
+        <a href="https://r-onie.github.io/Portfolio-website/">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Fashion Clothing Recommender
+        </h2>
+        <p>A Fashion Recommender like Flipkart, Amazon based on the selected item it will give some similar product 
+          which you may be interested.</p>
+        <a href="https://github.com/R-onie/Fashion_clothing_Recommender">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h2>AI Spam Detector
+        </h2>
+        <p>An AI-based spam mail detector web app that uses natural language processing to detect spams words.</p>
+        <a href="https://huggingface.co/spaces/Rishi2058/spam_detecter">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Obesity Level Predictor</h2>
+        <p>A machine learning app that predicts obesity levels based on user input and provides health tips.</p>
+        <a href="https://github.com/R-onie/prediction_of_obesity_level_using_ML_webApp">View Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
